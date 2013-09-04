@@ -2,7 +2,7 @@
   "name": "myApp",
   "version": "0.0.0",
   "description": "myApp, the structure for our in-person classroom session",
-  "main": "index.js",
+  "main": "bin/server.js",
   "directories": {
     "test": "test"
   },
@@ -20,7 +20,12 @@
     "generator-karma": "~0.5.0",
     "grunt-cli": "~0.1.9",
     "mocha": "~1.12.1",
-    "karma-mocha": "~0.1.0"
+    "karma-mocha": "~0.1.0",
+    "grunt": "~0.4.1",
+    "grunt-concurrent": "~0.3.1",
+    "grunt-nodemon": "~0.1.0",
+    "connect": "~2.8.8",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "dependencies": {
     "karma-script-launcher": "~0.1.0",
