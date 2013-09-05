@@ -3,11 +3,10 @@
 <head>
   <title>my Angular App</title>
 </head>
-<body>
-<div ng-controller = 'MainController'>
-  <div articles ng-repeat = 'post in articles' ng-model = 'post'>
-  </div>
-</div>
+<body ng-module = 'myApp.controllers'>
+
+<div ng-view></div>
+
 
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
