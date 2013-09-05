@@ -5,7 +5,8 @@
 </head>
 <body>
 <div ng-controller = 'MainController'>
-  <p> {{data}} </p>
+  <div articles ng-repeat = 'posts in data.children' ng-model = 'posts'>
+  </div>
 </div>
 
 

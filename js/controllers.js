@@ -5,7 +5,9 @@ angular.module('myApp.controllers', [])
       method: 'JSONP',
       url: 'http://api.reddit.com/r/funny.json?jsonp=JSON_CALLBACK'   
     }).success(function(data, status){
-      $scope.data = data;
+      $scope.data = data.data;
+    }).error(function(data, status){
+      console.log("An error occured");
     });
   });
 
