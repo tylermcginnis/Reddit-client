@@ -1,5 +1,8 @@
 angular.module('myApp.services', [])
-  .factory('httpConnect', ['$http', function($http){
+  .factory('SessionService', ['serverRoute', function(serverRoute) {
+    // serverRoute -> http://localhost:3000
+  }])
+  .factory('httpConnect', ['$http', 'serverRoute', function($http, serverRoute){
     var makeRequest = function(){
       return $http({
         method: 'JSONP',
